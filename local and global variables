@@ -1,0 +1,12 @@
+// variables local and global
+#include <bits/stdc++.h>
+using namespace std;
+int val=5;
+int myfunc(){
+int a=10;
+return a;
+}
+int main() {
+cout<<"the value of a-local variable is :"<<myfunc()<<endl;
+cout<<"the value of global variable is :"<<val<<endl;
+}
