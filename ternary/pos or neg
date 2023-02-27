@@ -1,0 +1,8 @@
+// c++ program to check given number is positive or negative using ternary operator
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	n>=0?cout<<"positive":cout<<"negative";
+}
