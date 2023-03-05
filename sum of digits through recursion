@@ -1,0 +1,16 @@
+//sum of digits in a number using recursion
+
+#include <bits/stdc++.h>
+using namespace std;
+int getsum(int num,int sum){
+	if(num==0)
+		return sum;
+		sum=sum+num%10;
+		return getsum(num/10,sum);
+	
+}
+int main() {
+	int num, sum=0;
+cin>>num;
+cout<<getsum(num,sum);
+}
