@@ -1,0 +1,17 @@
+//program to reverse a given number using recursion
+
+#include <bits/stdc++.h>
+using namespace std;
+int getrev(int n,int rev){
+	if(n==0)
+     return rev;
+		int rem=n%10;
+		rev=rev*10+rem;
+		return getrev(n/10,rev);
+
+			}
+			int main() {
+	int n;cin>>n;
+int rev=0;
+cout<<getrev(n,rev);
+}
